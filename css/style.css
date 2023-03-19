@@ -1,0 +1,28 @@
+
+div#header{
+	background-color: red;
+	widht: 1500px;
+}
+
+/*
+body {
+  background-size: 50px 50px;
+  background-position: 0% 0%;
+  background-image:
+  repeating-linear-gradient(
+    90deg,
+    #000 ,
+    #000 1px,
+    transparent 1px,
+    transparent 50px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    #000 ,
+    #000 1px,
+    #fff 1px,
+    #fff 50px
+  );
+}
+*/
+
