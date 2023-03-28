@@ -87,6 +87,8 @@ class FormChecker{
 	}
 }
 
+
+//FormCheckerを継承し，check関数をオーバーライドしることで実装完了
 class SampleFormChecker extends FormChecker{
 	constructor(){
 		super();
@@ -101,6 +103,7 @@ class SampleFormChecker extends FormChecker{
 	}
 }
 
+//使用例
 let sfc = new SampleFormChecker()
 			.set_inputs($(".txt"))
 			.set_trigger($("#submit-btn"));

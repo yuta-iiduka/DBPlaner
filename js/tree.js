@@ -228,7 +228,6 @@ class TreeObject extends Tree{
 //①JQueryオブジェクトの画面配置管理
 //②JQueryオブジェクトのリサイズ監視
 
-
 class Grid{
 	constructor(w,h){
 		this.window_w = window.innerWidth;
@@ -371,7 +370,7 @@ class Grid{
 	draw(){
 		this.body.css("background-size",this.w + "px " + this.h + "px")
 				.css("background-position","0% 0%")
-				.css("background-image","repeating-linear-gradient(90deg,#555,#555 1px,transparent 1px,transparent "+this.w+"px),repeating-linear-gradient(0deg,#555,#555 1px,transparent 1px,transparent "+this.h+"px)")
+				.css("background-image","repeating-linear-gradient(90deg,#aaa,#aaa 1px,transparent 1px,transparent "+this.w+"px),repeating-linear-gradient(0deg,#aaa,#aaa 1px,transparent 1px,transparent "+this.h+"px)")
 		return this;
 	}
 }

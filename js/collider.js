@@ -264,12 +264,12 @@ class Collider{
 	}
 	
 	//説明：Collider機能のONOFFボタン
-	//引数：なし
+	//引数：close(真偽値) 閉ボタンの表示非表示
 	//戻値：なし
 	set_button(close){
 		let self = this;
 		//this.jquery_obj.attr("contenteditable","true");
-		let open_btn_html = '<div id="settings_open' + this.id + '">' + this.title + '<i class="bi bi-eye-fill"></i></div>'
+		let open_btn_html = '<div id="settings_open' + this.id + '" style="font: x-small">' + this.title + '<i class="bi bi-eye-fill"></i></div>'
 		let prepend_html = '';
 		prepend_html = '<div id="settings_header' + this.id + '" ><div>' + this.title + '</div><div><span><i id="settings' + this.id + '" class="bi bi-gear-fill"></i><i id="settings_ok' + this.id + '" class="bi bi-check-circle-fill"></i></span></div></div>';
 		if(close == true){
@@ -327,6 +327,9 @@ class Collider{
 		return this;
 	}
 	
+	//説明：コンテキストメニューのイベント上書き
+	//引数：なし
+	//戻値：なし
 	static set_contextmenu(){
 		let self = this;
 		$("body").append('<div id="contextmenu" style="background-color: white; font-size: small; position: relative;">再表示</div>');
